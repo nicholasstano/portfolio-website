@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import ScrollIntoView from 'react-scroll-into-view'
 
 export class NavBar extends Component {
     render() {
         return (
             <div className="navbar">
-                <Link className="navbar-link" to="/about">About</Link>
-                <Link className="navbar-link" to="/contact">Contact</Link>
+                <ScrollIntoView selector="#about"><p>About</p></ScrollIntoView>
+                <ScrollIntoView selector="#experience"><p>Experience</p></ScrollIntoView>
+                <ScrollIntoView selector="#project"><p>Project</p></ScrollIntoView>
+                <ScrollIntoView selector="#contact"><p>Contact</p></ScrollIntoView>
             </div>
         )
     }
