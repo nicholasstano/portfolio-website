@@ -1,3 +1,7 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .navbar {
   overflow: hidden;
   background-color:red;
@@ -23,6 +27,7 @@
 
 .main {
   display: grid;
+  margin: 60px;
 }
 
 .contact {
@@ -30,22 +35,76 @@
   margin-top: 45px;
 }
 
-.about {
-  padding: 16px;
-  margin-top: 45px;
+.introduction {
+  height: 600px;
+  border: 2px solid blue;
+  border-style: ridge;
+  border-radius: 0px 0px 0px 20px;
+  margin: 60px;
+  padding: 50px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.introduction {
-  padding: 16px;
-  margin-top: 45px;
+.about {
+  height: 600px;
+  border: 2px solid yellow;
+  border-style: ridge;
+  border-radius: 0px 0px 0px 20px;
+  margin: 60px;
+  padding: 50px;
+  background-color:yellow;
+  color: black;
 }
 
 .experience {
-  padding: 16px;
-  margin-top: 45px;
+  height: 600px;
+  border: 2px solid red;
+  border-style: ridge;
+  border-radius: 0px 0px 0px 20px;
+  margin: 60px;
+  padding: 50px;
+  background-color: red;
+  color: white;
+}
+
+.project {
+  height: 600px;
+  border: 2px solid green;
+  border-style: ridge;
+  border-radius: 0px 0px 0px 20px;
+  margin: 60px;
+  padding: 50px;
+  background-color:green;
+  color: white;
+}
+
+.contact {
+  height: 600px;
+  border: 2px solid orange;
+  border-style: ridge;
+  border-radius: 0px 0px 0px 20px;
+  margin: 60px;
+  padding: 50px;
+  background-color: orange;
+  color: white;
 }
 
 .project {
   padding: 16px;
   margin-top: 45px;
+}
+
+.contact-images {
+  length: 45px;
+  width: 45px;
+}
+
+.intro-image {
+  height: auto;
+  width: 30%;
 }
