@@ -8,10 +8,10 @@ export class Contact extends Component {
         return (
             <div className="contact">
                 <h1>Contact</h1>
+                <p><a href="mailto:nicholasstano@gmail.com" target="_blank"><img src={gmail} className="contact-images" alt="gmail" /></a></p>
+                <p><a href="https://github.com/nicholasstano" target="_blank"><img src={github} className="contact-images" alt="github" /></a></p>
+                <p><a href="https://www.linkedin.com/in/nicholas-stano/" target="_blank"><img src={linkedin} className="contact-images" alt="linkedin" /></a></p>
                 <p>845-702-3793</p>
-                <a href="mailto:nicholasstano@gmail.com"><img src={gmail} className="contact-images" alt="gmail" /></a>
-                <a href="https://github.com/nicholasstano"><img src={github} className="contact-images" alt="github" /></a>
-                <a href="https://www.linkedin.com/in/nicholas-stano/"><img src={linkedin} className="contact-images" alt="linkedin" /></a>
             </div>
         )
     }

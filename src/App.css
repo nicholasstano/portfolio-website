@@ -1,5 +1,5 @@
 * {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: fantasy;
 }
 
 .navbar {
@@ -39,44 +39,78 @@
   height: 600px;
   border: 2px solid blue;
   border-style: ridge;
-  border-radius: 0px 0px 0px 20px;
+  border-radius: 0px 20px 0px 20px;
   margin: 60px;
   padding: 50px;
   background-color: blue;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 30% 50% 20%; 
+}
+
+.intro-image {
+  height: auto;
+  width: 50%;
+}
+
+.story-photo {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-column-gap: 20%;
 }
 
 .about {
   height: 600px;
   border: 2px solid yellow;
   border-style: ridge;
-  border-radius: 0px 0px 0px 20px;
+  border-radius: 0px 20px 0px 20px;
   margin: 60px;
   padding: 50px;
   background-color:yellow;
   color: black;
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%; 
+}
+
+.about img {
+  height: 50%;
+  width: auto;
+}
+
+.flatiron-projects {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+}
+
+.flatiron-projects img {
+  height: 100%;
+  width: auto;
 }
 
 .experience {
   height: 600px;
   border: 2px solid red;
   border-style: ridge;
-  border-radius: 0px 0px 0px 20px;
+  border-radius: 0px 20px 0px 20px;
   margin: 60px;
   padding: 50px;
   background-color: red;
   color: white;
+}
+.colleges {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.colleges img {
+  height: 150px;
+  width: auto;
 }
 
 .project {
   height: 600px;
   border: 2px solid green;
   border-style: ridge;
-  border-radius: 0px 0px 0px 20px;
+  border-radius: 0px 20px 0px 20px;
   margin: 60px;
   padding: 50px;
   background-color:green;
@@ -87,24 +121,25 @@
   height: 600px;
   border: 2px solid orange;
   border-style: ridge;
-  border-radius: 0px 0px 0px 20px;
+  border-radius: 0px 20px 0px 20px;
   margin: 60px;
   padding: 50px;
   background-color: orange;
   color: white;
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%; 
+}
+
+.contact-images {
+  height: 50%;
+  width: auto;
+}
+
+.contact-images:hover {
+  opacity: 0.5;
 }
 
 .project {
   padding: 16px;
   margin-top: 45px;
-}
-
-.contact-images {
-  length: 45px;
-  width: 45px;
-}
-
-.intro-image {
-  height: auto;
-  width: 30%;
 }
