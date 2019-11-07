@@ -1,28 +1,32 @@
 * {
-    font-family: fantasy;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .navbar {
   overflow: hidden;
-  background-color:red;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: lightskyblue;
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-.navbar p {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.aboutNav:hover {
+  background: lightcoral;
 }
 
-.navbar a:hover {
-  background: #ddd;
-  color: black;
+.experienceNav:hover {
+  background: lightgoldenrodyellow;
+}
+
+.projectNav:hover {
+  background: lightgreen;
+}
+
+.contactNav:hover {
+  background: lightsalmon;
 }
 
 .main {
@@ -37,15 +41,22 @@
 
 .introduction {
   height: 600px;
-  border: 2px solid blue;
-  border-style: ridge;
+  border: 0.5px dashed lightskyblue;
   border-radius: 0px 20px 0px 20px;
   margin: 60px;
   padding: 50px;
-  background-color: blue;
-  color: white;
+  color: black;
   display: grid;
-  grid-template-rows: 30% 50% 20%; 
+  grid-template-rows: 15% 55% 30%; 
+}
+
+.introduction-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightskyblue;
+  background-color: lightskyblue;
+  color: black;
 }
 
 .intro-image {
@@ -61,15 +72,21 @@
 
 .about {
   height: 600px;
-  border: 2px solid yellow;
-  border-style: ridge;
+  border: 0.5px dashed lightcoral;
   border-radius: 0px 20px 0px 20px;
   margin: 60px;
   padding: 50px;
-  background-color:yellow;
-  color: black;
   display: grid;
-  grid-template-rows: 20% 20% 20% 20% 20%; 
+  grid-template-rows: 15% 25% 20% 20% 20%; 
+}
+
+.about-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightcoral;
+  background-color: lightcoral;
+  color: black;
 }
 
 .about img {
@@ -89,14 +106,24 @@
 
 .experience {
   height: 600px;
-  border: 2px solid red;
-  border-style: ridge;
+  border: 0.5px dashed goldenrod;
   border-radius: 0px 20px 0px 20px;
   margin: 60px;
   padding: 50px;
-  background-color: red;
-  color: white;
+  color: black;
+  display: grid;
+  grid-template-rows: 15% 20% 25% 20% 20%; 
 }
+
+.experience-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgoldenrodyellow;
+  background-color: lightgoldenrodyellow;
+  color: black;
+}
+
 .colleges {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -108,26 +135,48 @@
 
 .project {
   height: 600px;
-  border: 2px solid green;
-  border-style: ridge;
+  border: 0.5px dashed lightgreen;
   border-radius: 0px 20px 0px 20px;
   margin: 60px;
   padding: 50px;
-  background-color:green;
-  color: white;
+  color: black;
+  display: grid;
+  grid-template-rows: 15% 20% 20% 20% 20% 5%; 
+}
+
+.project-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgreen;
+  background-color: lightgreen;
+  color: black;
+}
+
+.project-links {
+  display:flex; 
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .contact {
   height: 600px;
-  border: 2px solid orange;
-  border-style: ridge;
+  border: 0.5px dashed lightsalmon;
   border-radius: 0px 20px 0px 20px;
   margin: 60px;
   padding: 50px;
-  background-color: orange;
-  color: white;
+  color: black;
   display: grid;
-  grid-template-rows: 20% 20% 20% 20% 20%; 
+  grid-template-rows: 15% 20% 20% 20% 25%; 
+}
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightsalmon;
+  background-color: lightsalmon;
+  color: black;
 }
 
 .contact-images {
@@ -136,10 +185,5 @@
 }
 
 .contact-images:hover {
-  opacity: 0.5;
-}
-
-.project {
-  padding: 16px;
-  margin-top: 45px;
+  opacity: 0.10;
 }
