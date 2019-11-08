@@ -141,7 +141,12 @@
   padding: 50px;
   color: black;
   display: grid;
-  grid-template-rows: 15% 20% 20% 20% 20% 5%; 
+  grid-template-rows: 15% 20% 20% 45%; 
+}
+
+.project img {
+  width: 60%;
+  height: auto;
 }
 
 .project-header {
